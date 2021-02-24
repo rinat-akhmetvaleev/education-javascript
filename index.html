@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input :invalid {
+            border: 1px solid #ff0000;
+        }
+    </style>
+</head>
+<body>
+<h1>Подсчет возраста!</h1>
+<input class="birthYear" type="number" placeholder="Введите год вашего рождения!" maxlength="4" minlength="4" pattern="[0-9]{4}" required>
+<button>Посчитать возраст</button>
+<div class="pr"></div>
+<script src="index.js"></script>
+</body>
+</html>
