@@ -92,38 +92,38 @@
 // Попытка 3
 // Метод с анонимной фукций
 
-const year = 2021;
-const btn = document.querySelector('button');
+// const year = 2021;
+// const btn = document.querySelector('button');
 
-btn.onclick = function(){
-    let birthYear = document.querySelector('.birthYear').value;
-    let matc = year - birthYear;
-    if(matc > 0){
-        return document.querySelector('.pr').innerHTML=`Ваш возраст: <b>${+ matc}</b>лет`;
-    } else {
-        console.log('None');
-    }
-}
+// btn.onclick = function(){
+//     let birthYear = document.querySelector('.birthYear').value;
+//     let matc = year - birthYear;
+//     if(matc > 0){
+//         return document.querySelector('.pr').innerHTML=`Ваш возраст: <b>${+ matc}</b>лет`;
+//     } else {
+//         console.log('None');
+//     }
+// }
 
 
 
 //Попытка 4
 // Метод через именную функцию
 
-const year = 2021;
-const btn = document.querySelector('button');
+// const year = 2021;
+// const btn = document.querySelector('button');
 
-function ageCalc(){
-    let birthYear = document.querySelector('.birthYear').value;
-    let matc = year - birthYear;
+// function ageCalc(){
+//     let birthYear = document.querySelector('.birthYear').value;
+//     let matc = year - birthYear;
     
-    if(matc > 0){
-        return document.querySelector('.pr').innerHTML=`Ваш возраст: <b>${+ matc}</b>лет`;
-    } else {
-        console.log('None');
-    }
-}
-btn.onclick = ageCalc;
+//     if(matc > 0){
+//         return document.querySelector('.pr').innerHTML=`Ваш возраст: <b>${+ matc}</b>лет`;
+//     } else {
+//         console.log('None');
+//     }
+// }
+// btn.onclick = ageCalc;
 
 
 
@@ -134,12 +134,12 @@ btn.onclick = ageCalc;
 // то выведите 'Верно', иначе выведите 'Неверно'.
 //
 
-let a = 10;
-if(a == 10){
-    console.log('Верно');
-} else {
-    console.log('Неверно');
-}
+// let a = 10;
+// if(a == 10){
+//     console.log('Верно');
+// } else {
+//     console.log('Неверно');
+// }
 
 
 // В переменной min лежит число от 0 до 59.
@@ -147,17 +147,17 @@ if(a == 10){
 // (в первую, вторую, третью или четвертую).
 //
 
-let min = 5;
+// let min = 5;
 
-if(min>0 && min<=15){
-    console.log('Первая четверь часа');
-}else if(min>=16 && min<=30){
-    console.log('Вторая четверь часа');
-}else if(min>=31 && min<=45){
-    console.log('Третья четверь часа');
-}else if(min>=46 && min<=59){
-    console.log('Четвертая четверь часа');
-}
+// if(min>0 && min<=15){
+//     console.log('Первая четверь часа');
+// }else if(min>=16 && min<=30){
+//     console.log('Вторая четверь часа');
+// }else if(min>=31 && min<=45){
+//     console.log('Третья четверь часа');
+// }else if(min>=46 && min<=59){
+//     console.log('Четвертая четверь часа');
+// }
 
 
 // Переменная lang может принимать 2 значения:
@@ -165,31 +165,31 @@ if(min>0 && min<=15){
 // то в переменную arr запишем массив дней недели на русском языке,
 // а если имеет значение 'en' – то на английском.
 
-let lang = "en";
-let arr;
+// let lang = "en";
+// let arr;
 
-if(lang == "ru"){
-    arr = [
-        "Понедельник", 
-        "Вторник", 
-        "Среда", 
-        "Четверг", 
-        "Пятница", 
-        "Суббота", 
-        "Восскресенье"
-    ];
-} else if(lang == "en"){
-    arr = [
-        "Monday", 
-        "Tuesday", 
-        "Wednesday", 
-        "Thursday", 
-        "Friday", 
-        "Saturday", 
-        "Sunday"
-    ];
-}
-console.log(arr);
+// if(lang == "ru"){
+//     arr = [
+//         "Понедельник", 
+//         "Вторник", 
+//         "Среда", 
+//         "Четверг", 
+//         "Пятница", 
+//         "Суббота", 
+//         "Восскресенье"
+//     ];
+// } else if(lang == "en"){
+//     arr = [
+//         "Monday", 
+//         "Tuesday", 
+//         "Wednesday", 
+//         "Thursday", 
+//         "Friday", 
+//         "Saturday", 
+//         "Sunday"
+//     ];
+// }
+// console.log(arr);
 
 
 
@@ -223,3 +223,26 @@ console.log(arr);
 // Попробовать, напечатать таблицу умножения на 6, от 1 до 9.
 // Задание № 5 так сказать со звездочкой.
 
+
+
+// Создайте массив arr = ['a', 'b', 'c']. Выведите его на экран с помощью функции alert.
+
+
+// Дан массив ['a', 'b', 'c']. Добавьте ему в конец элементы 1, 2, 3.
+
+
+// Дан массив с элементами 'Привет, ', 'мир' и '!'. Необходимо вывести на экран фразу 'Привет, мир!'.
+
+
+// Работа с push, unshift
+
+//  Дан массив [1, 2, 3]. Добавьте ему в конец элементы 4, 5, 6.
+
+
+//  Дан массив [1, 2, 3]. Добавьте ему в начало элементы 4, 5, 6.
+// Работа с shift, pop
+//  Дан массив ['js', 'css', 'jq']. Выведите на экран первый элемент.
+//  Дан массив ['js', 'css', 'jq']. Выведите на экран последний элемент.
+// Работа с slice
+//  Дан массив [1, 2, 3, 4, 5]. С помощью метода slice запишите в новый элементы [1, 2, 3].
+//  Дан массив [1, 2, 3, 4, 5]. С помощью метода slice запишите в новый элементы [4, 5].
