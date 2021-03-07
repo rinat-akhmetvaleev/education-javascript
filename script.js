@@ -110,20 +110,20 @@
 //Попытка 4
 // Метод через именную функцию
 
-// const year = 2021;
-// const btn = document.querySelector('button');
+const year = 2021;
+const btn = document.querySelector('button');
 
-// function ageCalc(){
-//     let birthYear = document.querySelector('.birthYear').value;
-//     let matc = year - birthYear;
+function ageCalc(){
+    let birthYear = document.querySelector('.birthYear').value;
+    let matc = year - birthYear;
     
-//     if(matc > 0){
-//         return document.querySelector('.pr').innerHTML=`Ваш возраст: <b>${+ matc}</b>лет`;
-//     } else {
-//         console.log('None');
-//     }
-// }
-// btn.onclick = ageCalc;
+    if(matc > 0){
+        return document.querySelector('.pr').innerHTML=`Ваш возраст: <b>${+ matc}</b>лет`;
+    } else {
+        console.log('None');
+    }
+}
+btn.onclick = ageCalc;
 
 
 
@@ -230,33 +230,53 @@
 
 
 // Создайте массив arr = ['a', 'b', 'c']. Выведите его на экран с помощью функции alert.
-
+let arr = ['a', 'b', 'c'];
+console.log(arr);
 
 // Дан массив ['a', 'b', 'c']. Добавьте ему в конец элементы 1, 2, 3.
-
+arr.push('1', '2', '3');
+console.log(arr);
 
 // Дан массив с элементами 'Привет, ', 'мир' и '!'. Необходимо вывести на экран фразу 'Привет, мир!'.
-
+let arr = ['Привет, ', 'мир', '!',];
+console.log(arr);
 
 // Работа с push, unshift
 
 //  Дан массив [1, 2, 3]. Добавьте ему в конец элементы 4, 5, 6.
+let arr = [1, 2, 3,];
+console.log(arr);
+arr.push(4, 5, 6,);
+console.log(arr);
 
 
 //  Дан массив [1, 2, 3]. Добавьте ему в начало элементы 4, 5, 6.
+let arr = [1, 2, 3,];
+arr.unshift(4, 5, 6,);
+console.log(arr);
 
 
 // Работа с shift, pop
 
 //  Дан массив ['js', 'css', 'jq']. Выведите на экран первый элемент.
+let arr = ['js', 'css', 'jq'];
+console.log(arr[0]);
 
 
 //  Дан массив ['js', 'css', 'jq']. Выведите на экран последний элемент.
+let arr = ['js', 'css', 'jq'];
+console.log(arr[2]);
 
 
 // Работа с slice
 
 //  Дан массив [1, 2, 3, 4, 5]. С помощью метода slice запишите в новый элементы [1, 2, 3].
+let arr = [1, 2, 3, 4, 5];
+let newArr = arr.slice(0, 3);
+console.log(newArr);
 
 
 //  Дан массив [1, 2, 3, 4, 5]. С помощью метода slice запишите в новый элементы [4, 5].
+let arr = [1, 2, 3, 4, 5];
+let newArr = arr.slice(3, 5);
+console.log(newArr);
